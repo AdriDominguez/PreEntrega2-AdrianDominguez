@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import "variables";
+
+* {color: #ffffff;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin: 0px;
+padding: 0px;}
+
+body {
+    background-image: url(foto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fotologo {
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    background-color: $color-uno;
+    padding-right: 30px;
+    word-spacing: 25px;
+    margin: 5px;
+    text-align: right;
+    border-style:double;
+    border-color: $color-tres;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 10px;
+}
+
+a {
+    color: white !important;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: grid;
+        grid-template-columns:repeat(5, 1fr);
+        font-size: 15px;
+        padding-right: 15%;
+        }
+}
+
+hr {color: $color-cuatro;
+}
+
+h1 {
+    color: #ffffff;
+    padding-bottom: 45px;
+    padding-top: 50px;
+    -webkit-text-stroke:1px $color-tres;
+    font-size: 40px;
+    text-align: center;
+    background-color: $color-uno;
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    line-height: 38px;
+}
+
+@media only screen and (min-width: 800px) {
+h1 {
+    color: $color-blanco;
+    padding-bottom: 45px;
+    padding-top: 50px;
+    -webkit-text-stroke:1px $color-tres;
+    font-size: 40px;
+    text-align: center;
+    background-color: $color-uno;
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    line-height: 5px;
+    }
+}
+
+h2 {
+    color: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 25px;
+    -webkit-text-stroke:1px $color-tres;
+    text-align: center;
+}
+
+.index1 {
+    background-color: $color-uno;
+    margin: 5px;
+    margin-top: 80px;
+    border-style: double;
+    border-color: $color-tres;
+    max-height: 95vh;
+}
+
+@media only screen and (min-width: 800px) {
+    .index1 {
+    padding-bottom: 130px;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    max-height: 103vh;
+    }
+}
+
+.primertexto__parrafo {
+    text-align: center;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.lista_index {
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+.lista_index {
+    position: absolute;
+    display: grid;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    width: 40%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+.listas_index {
+    list-style-image: url(../photos/check.png);
+}
+}
+
+@media only screen and (min-width: 800px) {
+.list1 {
+    background: linear-gradient(to right, transparent, $color-uno, $color-dos, $color-tres, $color-blanco, transparent);
+    margin-bottom: 3vh;
+    margin-left: 5vh;
+    border-style: solid 1px;
+    border-radius: 5px;
+}
+}
+
+@media only screen and (min-width: 800px) {
+.list2 {
+    background: linear-gradient(to right, transparent, $color-uno, $color-dos, $color-tres, $color-blanco, transparent);
+    margin-bottom: 3vh;
+    margin-left: 5vh;
+}
+}
+
+@media only screen and (min-width: 800px) {
+.list3 {
+    background: linear-gradient(to right, transparent, $color-uno, $color-dos, $color-tres, $color-blanco, transparent);
+    margin-top: 3vh;
+    margin-left: 5vh;
+}
+}
+
+.fondo_foto1 img{
+    height: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .fondo_foto1 img{
+    height: 100%;
+    }
+}
+
+.fondo {
+    background-color: $color-uno;
+    display:grid;
+    margin: 5px;
+    margin-top: 5vh;
+    border-style: double;
+    border-color: $color-tres;
+    max-height: 105vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .fondo {
+        display: none;
+    }
+}
+
+.grid-item {
+    background-image: radial-gradient($color-tres, $color-dos, $color-uno);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: $color-blanco;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    height: 90%;
+}
+
+@media only screen and (min-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        height: 5vh;
+    }
+}
+
+footer {
+    display: grid;
+    font-size: 10px;
+    margin-top: 5vh;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        font-size: 15px;
+    }
+}
+
+.lasttext {
+    text-align: center;
+    margin-left: 5px;
+    border-style:double;
+    border-color: $color-tres;
+    background-color: $color-uno;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    border-style:double;
+    border-color: $color-tres;
+    background-color: $color-uno;
+}
+
+.servicios1 {
+    background-color: $color-uno;
+    margin: 5px;
+    margin-top: 80px;
+    border-style: double;
+    border-color: $color-tres;
+    padding-bottom: 50px;
+    height: 40vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .servicios1 {
+        margin-left: 35vh;
+        margin-right: 35vh;
+        text-align: center;
+        height: 30vh;
+        padding-bottom: 90px;
+    }
+}
+
+h3 {
+    color: $color-blanco;
+    display: grid;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 25px;
+    -webkit-text-stroke:1px $color-tres;
+    font-size: 25px;
+    text-align: center;
+}
+
+.servicios1__texto {
+    display: grid;
+    text-align: center;
+    padding-bottom: 15px;
+    }
+
+.fondoservicios {
+    border-style: double;
+    border-color: $color-tres;
+    background-color: $color-uno;
+    height: 35vh;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+.fondoservicios {
+    border-style: double;
+    border-color: $color-tres;
+    background-color: $color-uno;
+    padding: 25px;
+    margin: 5px;
+    margin-top: 30px;
+    text-align: center;
+    height: 95vh;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.listas {
+    border-style:ridge;
+    border-color: $color-dos;
+    -webkit-text-stroke: $color-cuatro;
+}
+
+.li1 {
+    background: (white);
+    background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+}
+
+.li2 {
+    background: (white);
+    background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+}
+
+.li3 {
+    background: (white);
+    background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+    }
+
+.li4 {
+    background: (white);
+    background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+    }
+
+.li5 {
+    background: (white);
+    background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+    }
+
+.li6 {
+    background: (white);
+    background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+}
+
+.li7 {
+    background: (white);
+    background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+}
+
+.li8 {
+    background: (white);
+    background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+}
+
+.li9 {
+    background: (white);
+    background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+    background-size: 200% 100%;
+    animation: gradient 2s ease-in-out infinite;
+    text-align: center;
+    color: white;
+}
+
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.ocultar_div {
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+#slider {
+    background: $color-blanco;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    }
+}
+
+#slider .foto_slide {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    border-left: 10px solid $color-blanco;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+    transform: skewX(-20deg);
+    transition: width 1.2s ease-in-out; 
+}
+
+#slider:hover div {width: 108px;cursor:default;
+}
+
+#slider:hover div:hover {
+    width: 392px;
+}
+
+.foto_slide img {
+    margin-left: -55px;
+    transform: skewX(20deg);
+    }
+
+#slider > div:first-child {margin-left: -63px;}
+    #slider > div:last-child {margin-right: -63px;}
+
+#fotoservicios {
+    margin-bottom: 80px;
+}
+
+.nosotros1 {
+    background-color: $color-uno;
+    margin-top: 80px;
+    border-style: double;
+    border-color: $color-tres;
+    padding-bottom: 110px;
+}
+
+@media only screen and (min-width:768px) {
+    .nosotros1 {
+        margin-left: 35vh;
+        margin-right: 35vh;
+        text-align: center;
+        height: 20vh;
+    }
+}
+
+.fondo_ubi {
+    background-color: $color-uno;
+    margin: 5px;
+    margin-top: 80px;
+    border-style: double;
+    border-color: $color-tres;
+    padding-bottom: 130px;
+    height: 80vh;
+    margin-bottom: 65px;
+}
+
+h5 {
+    color: $color-blanco;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-left: 25px;
+    -webkit-text-stroke:1px $color-tres;
+    font-size: 25px;
+}
+
+.fotoubi1 {
+    padding-top: 1px;
+}
+
+.textoubi1 {
+    float: right;
+    padding-top: 65px;
+}
+
+.textoubi2 {
+    float: right;
+    padding-right: 200px;
+    line-height: 85px;
+}
+
+.horarioubi {
+    float:right; 
+}
+
+.contacto1 {
+    background-color: $color-uno;
+    display: grid;
+    justify-content: left;
+    margin: 5px;
+    border-style: double;
+    border-color: $color-tres;
+    padding-bottom: 110px;
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+@media only screen and (min-width:768px) {
+    .contacto1 {
+    background-color: $color-uno;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    border-style: double;
+    border-color: $color-tres;
+    padding-bottom: 110px;
+    text-align: start;
+    font-size: 3vh;
+    }
+}
+
+.contacto1__contact {
+    display: grid;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 3vh;
+    padding-right: 5vh;
+    font-size: 2vh;
+}
+
+@media only screen and (min-width:768px) {
+    .contacto1__contact {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    font-size: 3vh;
+    width: 50%;
+    padding-bottom: 3vh;
+    }
+}
+
+
+
+.telefono {
+    text-align: left;
+    margin-left: 25px;
+    font-style: italic;
+}
+
+@media only screen and (min-width:768px) {
+    .telefono{
+    text-align: left;
+    margin-left: 25px;
+    grid-column: 1;
+    }
+}
+
+.redes {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+
+@media only screen and (min-width:768px) {
+    .redes{
+    grid-column: 1;
+    text-align: left;
+    margin-left: 25px;
+    }
+}
+
+.fbig {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+@media only screen and (min-width:768px) {
+    .fbig{
+    grid-column: 1;
+    }
+}
+
+.mail {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+
+@media only screen and (min-width:768px) {
+    .mail{
+    grid-column: 1;
+    }
+}
+
+.correo {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+@media only screen and (min-width:768px) {
+    .correo{
+    grid-column: 1;
+    }
+}
+
+
+.contacto1__form {    
+    margin-top: 5vh;
+}
+
+@media only screen and (min-width:768px) {
+    .contacto1__form {
+    grid-template-columns: auto;
+    padding-left: 120vh;
+    position: absolute;
+    text-align: center;
+    }
+}
+
+#botonenviar {
+    background-color: $color-tres;
+    border-style:dotted;
+    border-color: $color-tres;
+    height: 5vh;
+    width: 15vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 2s;
+}
+
+#botonenviar:hover {
+    width: 45vh;
+}
