@@ -1,7 +1,7 @@
 {
-  "name": "proyecto",
+  "name": "proyectowebtech912",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina con Web dedicada al servicio técnico de informática",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
