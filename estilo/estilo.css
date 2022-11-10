@@ -92,7 +92,7 @@ h5 {
 .lista_index {
   display: none; }
 
-.fondo_foto1 img {
+.fondo_foto1 {
   height: 100%; }
 
 .fondoweb {
@@ -277,7 +277,7 @@ ul {
 
 .textoubi2 {
   float: right;
-  padding-right: 200px;
+  padding-right: 50px;
   line-height: 85px;
   padding-left: 20px; }
 
@@ -526,6 +526,6 @@ body {
 
 @media only screen and (max-width: 450px) {
   #iframe {
-    width: 70%;
-    height: 15%;
+    width: 80%;
+    height: 180px;
     align-items: center; } }

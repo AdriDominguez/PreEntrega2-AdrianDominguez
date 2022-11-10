@@ -47,6 +47,7 @@ body {
     @include background;
 	background-image: url(foto.jpg);
 }
+
 //* MEDIA QUERIES *// VISTA DESKTOP
 @media only screen and (min-width: $ancho) {
 	.menu {
@@ -234,8 +235,8 @@ body {
 }
 @media only screen and (max-width: ($ancho - 350)) {
 	#iframe {
-		width: 70%;
-		height: 15%;
+		width: 80%;
+		height: 180px;
 		align-items: center;
 	}
 }
