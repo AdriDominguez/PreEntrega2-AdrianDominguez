@@ -1,42 +1,38 @@
 @import "https://fonts.googleapis.com/css2?family=Bungee&display=swap";
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-* {
-  color: #ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0px;
-  padding: 0px; }
-
-body {
-  background-image: url(foto.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 .fotologo {
   text-align: center; }
 
 .menu {
+  border-style: double;
+  border-color: #007ea7;
   display: grid;
   background-color: #00171f;
   padding-right: 30px;
   word-spacing: 25px;
   margin: 5px;
   text-align: right;
-  border-style: double;
-  border-color: #007ea7;
   grid-template-columns: repeat(5, 1fr);
   font-size: 10px; }
 
-a {
-  color: white !important;
-  text-decoration: none; }
+footer {
+  display: grid;
+  font-size: 10px;
+  margin-top: 5vh; }
+
+.lasttext {
+  border-style: double;
+  border-color: #007ea7;
+  text-align: center;
+  margin-left: 5px;
+  background-color: #00171f; }
+
+.copyright {
+  border-style: double;
+  border-color: #007ea7;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+  background-color: #00171f; }
 
 hr {
   color: #00a8e8; }
@@ -62,12 +58,30 @@ h2 {
   -webkit-text-stroke: 1px #007ea7;
   text-align: center; }
 
+h3 {
+  color: #ffffff;
+  display: grid;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  -webkit-text-stroke: 1px #007ea7;
+  font-size: 25px;
+  text-align: center; }
+
+h5 {
+  padding-bottom: 15px;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #007ea7;
+  font-size: 25px;
+  float: left;
+  padding-top: 50px;
+  padding-left: 65px; }
+
 .index1 {
+  border-style: double;
+  border-color: #007ea7;
   background-color: #00171f;
   margin: 5px;
   margin-top: 80px;
-  border-style: double;
-  border-color: #007ea7;
   max-height: 95vh; }
 
 .primertexto__parrafo {
@@ -81,13 +95,13 @@ h2 {
 .fondo_foto1 img {
   height: 100%; }
 
-.fondo {
+.fondoweb {
+  border-style: double;
+  border-color: #007ea7;
   background-color: #00171f;
   display: grid;
   margin: 5px;
   margin-top: 5vh;
-  border-style: double;
-  border-color: #007ea7;
   max-height: 105vh; }
 
 .grid-item {
@@ -104,43 +118,14 @@ h2 {
   padding: 10px;
   height: 90%; }
 
-footer {
-  display: grid;
-  font-size: 10px;
-  margin-top: 5vh; }
-
-.lasttext {
-  text-align: center;
-  margin-left: 5px;
-  border-style: double;
-  border-color: #007ea7;
-  background-color: #00171f; }
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5px;
-  border-style: double;
-  border-color: #007ea7;
-  background-color: #00171f; }
-
 .servicios1 {
+  border-style: double;
+  border-color: #007ea7;
   background-color: #00171f;
   margin: 5px;
   margin-top: 80px;
-  border-style: double;
-  border-color: #007ea7;
   padding-bottom: 50px;
   height: 40vh; }
-
-h3 {
-  color: #ffffff;
-  display: grid;
-  padding-bottom: 40px;
-  padding-top: 20px;
-  -webkit-text-stroke: 1px #007ea7;
-  font-size: 25px;
-  text-align: center; }
 
 .servicios1__texto {
   display: grid;
@@ -267,51 +252,28 @@ ul {
   margin-bottom: 80px; }
 
 .nosotros1 {
-  background-color: #00171f;
-  margin-top: 80px;
   border-style: double;
   border-color: #007ea7;
+  background-color: #00171f;
+  margin-top: 80px;
   padding-bottom: 110px; }
 
 .fondo_ubi {
+  border-style: double;
+  border-color: #007ea7;
   max-height: 200vh;
   background-color: #00171f;
   margin: 5px;
   margin-top: 80px;
-  border-style: double;
-  border-color: #007ea7;
   padding-bottom: 100px;
   margin-bottom: 65px; }
 
-.contacto1 {
-  background-color: #00171f;
-  display: grid;
-  justify-content: left;
-  margin: 5px;
+.textoubi1 {
   border-style: double;
   border-color: #007ea7;
-  padding-bottom: 110px;
-  text-align: center;
-  margin-bottom: 15vh; }
-
-h5 {
-  padding-bottom: 15px;
-  color: #ffffff;
-  -webkit-text-stroke: 1px #007ea7;
-  font-size: 25px;
-  float: left;
-  padding-top: 50px;
-  padding-left: 65px; }
-
-.textoubi1 {
   text-align: center;
   padding-left: 5px;
-  padding-bottom: 20px;
-  border-color: #007ea7;
-  border-style: double; }
-
-.fotoubi1 {
-  padding-top: 1px; }
+  padding-bottom: 20px; }
 
 .textoubi2 {
   float: right;
@@ -319,8 +281,22 @@ h5 {
   line-height: 85px;
   padding-left: 20px; }
 
+.fotoubi1 {
+  padding-top: 1px; }
+
 .horarioubi {
   float: right; }
+
+.contacto1 {
+  border-style: double;
+  border-color: #007ea7;
+  background-color: #00171f;
+  display: grid;
+  justify-content: left;
+  margin: 5px;
+  padding-bottom: 110px;
+  text-align: center;
+  margin-bottom: 15vh; }
 
 .contacto1__contact {
   display: grid;
@@ -373,6 +349,26 @@ h5 {
   #botonenviar:hover {
     width: 45vh; }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+* {
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(foto.jpg); }
+
 @media only screen and (min-width: 800px) {
   .menu {
     display: grid;
@@ -420,7 +416,7 @@ h5 {
     margin-left: 5vh; }
   .fondo_foto1 img {
     height: 100%; }
-  .fondo {
+  .fondoweb {
     display: none; }
   .grid-container {
     display: grid;
@@ -457,11 +453,11 @@ h5 {
     text-align: center;
     height: 20vh; }
   .fondo_ubi {
+    border-style: double;
+    border-color: #007ea7;
     background-color: #00171f;
     margin: 5px;
     margin-top: 80px;
-    border-style: double;
-    border-color: #007ea7;
     padding-bottom: 130px;
     height: 80vh;
     margin-bottom: 65px; }
@@ -479,21 +475,21 @@ h5 {
     width: 30%;
     height: 99%; }
   .map {
+    border-style: double;
+    border-color: #007ea7;
     padding-left: 80px;
     border-left: transparent;
     border-right: transparent;
-    border-style: double;
-    border-color: #007ea7;
     height: 50vh; }
   .contacto1 {
+    border-style: double;
+    border-color: #007ea7;
     background-color: #00171f;
     display: grid;
     grid-template-columns: auto auto;
     height: 100%;
     margin-top: 80px;
     margin-bottom: 65px;
-    border-style: double;
-    border-color: #007ea7;
     padding-bottom: 110px;
     text-align: start;
     font-size: 3vh; }

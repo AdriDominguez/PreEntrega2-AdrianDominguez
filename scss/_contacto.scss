@@ -1,0 +1,68 @@
+//* SIN MEDIA QUERIES *//
+
+@mixin bordes {
+    border-style: double;
+	border-color: $color-tres;
+}
+.contacto1 {
+    @include bordes;
+    background-color: $color-uno;
+    display: grid;
+    justify-content: left;
+    margin: 5px;
+    padding-bottom: 110px;
+    text-align: center;
+    margin-bottom: 15vh;
+}
+.contacto1__contact {
+	display: grid;
+	padding-top: 5vh;
+	padding-left: 5vh;
+	padding-bottom: 3vh;
+	padding-right: 5vh;
+	font-size: 2vh;
+}
+.telefono {
+	text-align: left;
+	margin-left: 25px;
+	font-style: italic;
+}
+.redes {
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 35px;
+}
+.fbig {
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 35px;
+	font-style: italic;
+}
+.mail {
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 35px;
+}
+.correo {
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 35px;
+	font-style: italic;
+}
+.contacto1__form {
+	margin-top: 5vh;
+}
+#botonenviar {
+	background-color: $color-tres;
+	border-style: dotted;
+	border-color: $color-tres;
+	height: 5vh;
+	width: 15vh;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	transition: 2s;
+	&:hover {
+		width: 45vh;
+	}
+}

@@ -1,0 +1,13 @@
+//* SIN MEDIA QUERIES *//
+
+@mixin bordes {
+    border-style: double;
+	border-color: $color-tres;
+}
+
+.nosotros1 {
+    @include bordes;
+    background-color: $color-uno;
+    margin-top: 80px;
+    padding-bottom: 110px;
+}

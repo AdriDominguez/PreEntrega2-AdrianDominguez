@@ -1,0 +1,149 @@
+//* SIN MEDIA QUERIES *//
+
+@mixin bordes {
+    border-style: double;
+	border-color: $color-tres;
+}
+
+.servicios1 {
+    @include bordes;
+	background-color: $color-uno;
+	margin: 5px;
+	margin-top: 80px;
+	padding-bottom: 50px;
+	height: 40vh;
+}
+
+.servicios1__texto {
+	display: grid;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.fondoservicios {
+	@include bordes;
+	background-color: $color-uno;
+	height: 35vh;
+	margin: 5px;
+	margin-top: 30px;
+}
+ul {
+	list-style: none;
+}
+.listas {
+	border-style: ridge;
+	border-color: $color-dos;
+	-webkit-text-stroke: $color-cuatro;
+}
+.li1 {
+	background: (white);
+	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li2 {
+	background: (white);
+	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li3 {
+	background: (white);
+	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li4 {
+	background: (white);
+	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li5 {
+	background: (white);
+	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li6 {
+	background: (white);
+	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li7 {
+	background: (white);
+	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li8 {
+	background: (white);
+	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+.li9 {
+	background: (white);
+	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
+	background-size: 200% 100%;
+	animation: gradient 2s ease-in-out infinite;
+	text-align: center;
+	color: white;
+}
+#slider {
+	.foto_slide {
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 30%;
+		height: 100%;
+		float: left;
+		overflow: hidden;
+		border-left: 10px solid $color-blanco;
+		box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+		transform: skewX(-20deg);
+		transition: width 1.2s ease-in-out;
+	}
+	&:hover {
+		div {
+			width: 108px;
+			cursor: default;
+			&:hover {
+				width: 392px;
+			}
+		}
+	}
+	>div {
+		&:first-child {
+			margin-left: -63px;
+		}
+		&:last-child {
+			margin-right: -63px;
+		}
+	}
+}
+.foto_slide {
+	img {
+		margin-left: -55px;
+		transform: skewX(20deg);
+	}
+}
+#fotoservicios {
+	margin-bottom: 80px;
+}

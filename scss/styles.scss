@@ -1,6 +1,20 @@
+//* FUENTES *//
 @import "https://fonts.googleapis.com/css2?family=Bungee&display=swap";
+//* VARIABLES *//
 @import "variables";
 
+//* LAYOUT *//
+@import "layout/navyfooter";
+@import "layout/header";
+
+//* PAGES *//
+@import "index";
+@import "servicios";
+@import "nosotros";
+@import "ubicacion";
+@import "contacto";
+
+//* RESTO DEL SCSS *//
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -12,387 +26,28 @@
 		background-position: 0% 50%;
 	}
 }
-
 * {
 	color: #ffffff;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
-body {
-	background-image: url(foto.jpg);
-	background-attachment: fixed;
+
+@mixin bordes {
+    border-style: double;
+	border-color: $color-tres;
+}
+@mixin background{
+    background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.fotologo {
-	text-align: center;
-}
-.menu {
-	display: grid;
-	background-color: $color-uno;
-	padding-right: 30px;
-	word-spacing: 25px;
-	margin: 5px;
-	text-align: right;
-	border-style: double;
-	border-color: $color-tres;
-	grid-template-columns: repeat(5, 1fr);
-	font-size: 10px;
-}
-a {
-	color: white !important;
-	text-decoration: none;
-}
-hr {
-	color: $color-cuatro;
-}
-h1 {
-	color: #ffffff;
-	padding-bottom: 45px;
-	padding-top: 50px;
-	-webkit-text-stroke: 1px $color-tres;
-	font-size: 40px;
-	text-align: center;
-	background-color: $color-uno;
-	filter: alpha(opacity=70);
-	-moz-opacity: .70;
-	opacity: .70;
-	line-height: 38px;
-}
-h2 {
-	color: #ffffff;
-	padding-bottom: 50px;
-	padding-top: 50px;
-	padding-left: 25px;
-	-webkit-text-stroke: 1px $color-tres;
-	text-align: center;
-}
-.index1 {
-	background-color: $color-uno;
-	margin: 5px;
-	margin-top: 80px;
-	border-style: double;
-	border-color: $color-tres;
-	max-height: 95vh;
-}
-.primertexto__parrafo {
-	text-align: center;
-	margin-left: 1vh;
-	margin-right: 1vh;
-}
-.lista_index {
-	display: none;
-}
-.fondo_foto1 {
-	img {
-		height: 100%;
-	}
-}
-.fondo {
-	background-color: $color-uno;
-	display: grid;
-	margin: 5px;
-	margin-top: 5vh;
-	border-style: double;
-	border-color: $color-tres;
-	max-height: 105vh;
-}
-.grid-item {
-	background-image: radial-gradient($color-tres, $color-dos, $color-uno);
-	border: 1px solid rgba(0, 0, 0, 0.8);
-	padding: 20px;
-	font-size: 20px;
-	text-align: center;
-	color: $color-blanco;
-}
-.grid-container {
-	display: grid;
-	grid-template-columns: auto;
-	padding: 10px;
-	height: 90%;
-}
-footer {
-	display: grid;
-	font-size: 10px;
-	margin-top: 5vh;
-}
-.lasttext {
-	text-align: center;
-	margin-left: 5px;
-	border-style: double;
-	border-color: $color-tres;
-	background-color: $color-uno;
-}
-.copyright {
-	display: flex;
-	justify-content: space-between;
-	margin-left: 5px;
-	border-style: double;
-	border-color: $color-tres;
-	background-color: $color-uno;
-}
-.servicios1 {
-	background-color: $color-uno;
-	margin: 5px;
-	margin-top: 80px;
-	border-style: double;
-	border-color: $color-tres;
-	padding-bottom: 50px;
-	height: 40vh;
-}
-h3 {
-	color: $color-blanco;
-	display: grid;
-	padding-bottom: 40px;
-	padding-top: 20px;
-	-webkit-text-stroke: 1px $color-tres;
-	font-size: 25px;
-	text-align: center;
-}
-.servicios1__texto {
-	display: grid;
-	text-align: center;
-	padding-bottom: 15px;
-}
-.fondoservicios {
-	border-style: double;
-	border-color: $color-tres;
-	background-color: $color-uno;
-	height: 35vh;
-	margin: 5px;
-	margin-top: 30px;
-}
-ul {
-	list-style: none;
-}
-.listas {
-	border-style: ridge;
-	border-color: $color-dos;
-	-webkit-text-stroke: $color-cuatro;
-}
-.li1 {
-	background: (white);
-	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li2 {
-	background: (white);
-	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li3 {
-	background: (white);
-	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li4 {
-	background: (white);
-	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li5 {
-	background: (white);
-	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li6 {
-	background: (white);
-	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li7 {
-	background: (white);
-	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li8 {
-	background: (white);
-	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-.li9 {
-	background: (white);
-	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
-	background-size: 200% 100%;
-	animation: gradient 2s ease-in-out infinite;
-	text-align: center;
-	color: white;
-}
-#slider {
-	.foto_slide {
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		width: 30%;
-		height: 100%;
-		float: left;
-		overflow: hidden;
-		border-left: 10px solid $color-blanco;
-		box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
-		transform: skewX(-20deg);
-		transition: width 1.2s ease-in-out;
-	}
-	&:hover {
-		div {
-			width: 108px;
-			cursor: default;
-			&:hover {
-				width: 392px;
-			}
-		}
-	}
-	>div {
-		&:first-child {
-			margin-left: -63px;
-		}
-		&:last-child {
-			margin-right: -63px;
-		}
-	}
-}
-.foto_slide {
-	img {
-		margin-left: -55px;
-		transform: skewX(20deg);
-	}
-}
-#fotoservicios {
-	margin-bottom: 80px;
-}
-// {
-	.nosotros1 {
-		background-color: $color-uno;
-		margin-top: 80px;
-		border-style: double;
-		border-color: $color-tres;
-		padding-bottom: 110px;
-	}
-	.fondo_ubi {
-		max-height: 200vh;
-		background-color: $color-uno;
-		margin: 5px;
-		margin-top: 80px;
-		border-style: double;
-		border-color: $color-tres;
-		padding-bottom: 100px;
-		margin-bottom: 65px;
-	}
-	.contacto1 {
-		background-color: $color-uno;
-		display: grid;
-		justify-content: left;
-		margin: 5px;
-		border-style: double;
-		border-color: $color-tres;
-		padding-bottom: 110px;
-		text-align: center;
-		margin-bottom: 15vh;
-	}
 
-h5 {
-	padding-bottom: 15px;
-	color: $color-blanco;
-	-webkit-text-stroke: 1px $color-tres;
-	font-size: 25px;
-	float: left;
-	padding-top: 50px;
-	padding-left: 65px;
+body {
+    @include background;
+	background-image: url(foto.jpg);
 }
-.textoubi1 {
-	text-align: center;
-	padding-left: 5px;
-	padding-bottom: 20px;
-	border-color: $color-tres;
-	border-style: double;
-}
-.fotoubi1 {
-	padding-top: 1px;
-}
-.textoubi2 {
-	float: right;
-	padding-right: 200px;
-	line-height: 85px;
-	padding-left: 20px;
-}
-.horarioubi {
-	float: right;
-}
-.contacto1__contact {
-	display: grid;
-	padding-top: 5vh;
-	padding-left: 5vh;
-	padding-bottom: 3vh;
-	padding-right: 5vh;
-	font-size: 2vh;
-}
-.telefono {
-	text-align: left;
-	margin-left: 25px;
-	font-style: italic;
-}
-.redes {
-	text-align: left;
-	margin-left: 25px;
-	margin-top: 35px;
-}
-.fbig {
-	text-align: left;
-	margin-left: 25px;
-	margin-top: 35px;
-	font-style: italic;
-}
-.mail {
-	text-align: left;
-	margin-left: 25px;
-	margin-top: 35px;
-}
-.correo {
-	text-align: left;
-	margin-left: 25px;
-	margin-top: 35px;
-	font-style: italic;
-}
-.contacto1__form {
-	margin-top: 5vh;
-}
-#botonenviar {
-	background-color: $color-tres;
-	border-style: dotted;
-	border-color: $color-tres;
-	height: 5vh;
-	width: 15vh;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 15px;
-	letter-spacing: 1px;
-	transition: 2s;
-	&:hover {
-		width: 45vh;
-	}
-}
+//* MEDIA QUERIES *// VISTA DESKTOP
 @media only screen and (min-width: $ancho) {
 	.menu {
 		display: grid;
@@ -451,7 +106,7 @@ h5 {
 			height: 100%;
 		}
 	}
-	.fondo {
+	.fondoweb {
 		display: none;
 	}
 	.grid-container {
@@ -470,8 +125,7 @@ h5 {
 		padding-bottom: 90px;
 	}
 	.fondoservicios {
-		border-style: double;
-		border-color: $color-tres;
+		@include bordes;
 		background-color: $color-uno;
 		padding: 25px;
 		margin: 5px;
@@ -495,11 +149,10 @@ h5 {
 		height: 20vh;
 	}
 	.fondo_ubi {
+        @include bordes;
 		background-color: $color-uno;
 		margin: 5px;
 		margin-top: 80px;
-		border-style: double;
-		border-color: $color-tres;
 		padding-bottom: 130px;
 		height: 80vh;
 		margin-bottom: 65px;
@@ -521,22 +174,20 @@ h5 {
 		height: 99%;
 	}
 	.map {
+        @include bordes;
 		padding-left: 80px;
 		border-left: transparent;
 		border-right: transparent;
-		border-style: double;
-		border-color: $color-tres;
 		height: 50vh;
 	}
 	.contacto1 {
+        @include bordes;
 		background-color: $color-uno;
 		display: grid;
 		grid-template-columns: auto auto;
 		height: 100%;
 		margin-top: 80px;
 		margin-bottom: 65px;
-		border-style: double;
-		border-color: $color-tres;
 		padding-bottom: 110px;
 		text-align: start;
 		font-size: 3vh;
@@ -575,6 +226,7 @@ h5 {
 		text-align: center;
 	}
 }
+//* VISTA MOBIL *//
 @media only screen and (max-width: ($ancho - 200)) {
 	.ocultar_div {
 		display: none;

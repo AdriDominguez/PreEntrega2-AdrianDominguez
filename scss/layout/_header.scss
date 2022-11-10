@@ -1,0 +1,48 @@
+//* SIN MEDIA QUERIES *//
+
+@mixin bordes {
+    border-style: double;
+	border-color: $color-tres;
+}
+hr {
+	color: $color-cuatro;
+}
+h1 { //* INCLUIDO EN TODOS LOS HTML *//
+	color: #ffffff;
+	padding-bottom: 45px;
+	padding-top: 50px;
+	-webkit-text-stroke: 1px $color-tres;
+	font-size: 40px;
+	text-align: center;
+	background-color: $color-uno;
+	filter: alpha(opacity=70);
+	-moz-opacity: .70;
+	opacity: .70;
+	line-height: 38px;
+}
+h2 { //* INCLUIDO SOLO EN INDEX *//
+	color: #ffffff;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 25px;
+	-webkit-text-stroke: 1px $color-tres;
+	text-align: center;
+}
+h3 { //* INCLUIDO EN SERVICIOS Y NOSOTROS *//
+	color: $color-blanco;
+	display: grid;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	-webkit-text-stroke: 1px $color-tres;
+	font-size: 25px;
+	text-align: center;
+}
+h5 { //* INCLUIDO SOLO EN UBICACIÓN *//
+	padding-bottom: 15px;
+	color: $color-blanco;
+	-webkit-text-stroke: 1px $color-tres;
+	font-size: 25px;
+	float: left;
+	padding-top: 50px;
+	padding-left: 65px;
+}

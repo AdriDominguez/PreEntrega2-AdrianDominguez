@@ -1,0 +1,40 @@
+//* SIN MEDIA QUERIES *//
+
+@mixin bordes {
+    border-style: double;
+	border-color: $color-tres;
+}
+//* NAV *//
+.fotologo {
+	text-align: center;
+}
+.menu {
+    @include bordes;
+	display: grid;
+	background-color: $color-uno;
+	padding-right: 30px;
+	word-spacing: 25px;
+	margin: 5px;
+	text-align: right;
+	grid-template-columns: repeat(5, 1fr);
+	font-size: 10px;
+}
+//* FOOTER *//
+footer {
+	display: grid;
+	font-size: 10px;
+	margin-top: 5vh;
+}
+.lasttext { //* TEXTO DE TODOS LOS DERECHOS RESERVADOS *//
+    @include bordes;
+	text-align: center;
+	margin-left: 5px;
+	background-color: $color-uno;
+}
+.copyright { 
+    @include bordes;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5px;
+	background-color: $color-uno;
+}
