@@ -2,17 +2,18 @@
 .fotologo {
   text-align: center; }
 
-.menu {
+nav {
   border-style: double;
   border-color: #007ea7;
   display: grid;
+  justify-content: space-evenly;
   background-color: #00171f;
-  padding-right: 30px;
-  word-spacing: 25px;
   margin: 5px;
-  text-align: right;
-  grid-template-columns: repeat(5, 1fr);
-  font-size: 10px; }
+  grid-template-columns: 5;
+  font-size: 12px;
+  word-spacing: 15px; }
+  nav .menu {
+    margin: 5px; }
 
 footer {
   display: grid;
@@ -370,11 +371,22 @@ body {
   background-image: url(foto.jpg); }
 
 @media only screen and (min-width: 800px) {
-  .menu {
+  nav {
+    border-style: double;
+    border-color: #007ea7;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    background-color: #00171f;
+    margin: 5px;
+    grid-template-columns: 5;
     font-size: 15px;
-    padding-right: 15%; }
+    word-spacing: 100px; }
+    nav .menu {
+      margin: 5px; }
+      nav .menu a:hover {
+        background-size: 45%;
+        background-color: #00a8e8;
+        border-radius: 2px; }
   h1 {
     color: #ffffff;
     padding-bottom: 45px;

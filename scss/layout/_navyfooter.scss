@@ -8,17 +8,21 @@
 .fotologo {
 	text-align: center;
 }
-.menu {
+nav {
     @include bordes;
 	display: grid;
+	justify-content: space-evenly;
 	background-color: $color-uno;
-	padding-right: 30px;
-	word-spacing: 25px;
 	margin: 5px;
-	text-align: right;
-	grid-template-columns: repeat(5, 1fr);
-	font-size: 10px;
+	grid-template-columns: 5;
+	font-size: 12px;
+	word-spacing: 15px;
+	.menu {
+		margin: 5px;
+	}
 }
+	
+
 //* FOOTER *//
 footer {
 	display: grid;

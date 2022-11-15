@@ -50,12 +50,23 @@ body {
 
 //* MEDIA QUERIES *// VISTA DESKTOP
 @media only screen and (min-width: $ancho) {
-	.menu {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		font-size: 15px;
-		padding-right: 15%;
+	nav { @include bordes;
+	display: grid;
+	justify-content: space-evenly;
+	background-color: $color-uno;
+	margin: 5px;
+	grid-template-columns: 5;
+	font-size: 15px;
+	word-spacing: 100px;
+		.menu {
+		margin: 5px;
+		a:hover {
+			background-size: 45%;
+			background-color: $color-cuatro;
+			border-radius: 2px;
+		}
 	}
+}
 	h1 {
 		color: $color-blanco;
 		padding-bottom: 45px;

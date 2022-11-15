@@ -1,37 +1,43 @@
 //* SIN MEDIA QUERIES *//
 
 @mixin bordes {
-    border-style: double;
+	border-style: double;
 	border-color: $color-tres;
 }
+
 .index1 {
-    @include bordes;
+	@include bordes;
 	background-color: $color-uno;
 	margin: 5px;
 	margin-top: 80px;
 	max-height: 95vh;
 }
+
 .primertexto__parrafo {
 	text-align: center;
 	margin-left: 1vh;
 	margin-right: 1vh;
 }
+
 .lista_index {
 	display: none;
 }
+
 .fondo_foto1 {
-		height: 100%;
-	}
+	height: 100%;
+}
 
 
-.fondoweb { //* SOLO VISTA WEB *//
-    @include bordes;
+.fondoweb {
+	//* SOLO VISTA WEB *//
+	@include bordes;
 	background-color: $color-uno;
 	display: grid;
 	margin: 5px;
 	margin-top: 5vh;
 	max-height: 105vh;
 }
+
 .grid-item {
 	background-image: radial-gradient($color-tres, $color-dos, $color-uno);
 	border: 1px solid rgba(0, 0, 0, 0.8);
@@ -40,9 +46,11 @@
 	text-align: center;
 	color: $color-blanco;
 }
+
 .grid-container {
 	display: grid;
 	grid-template-columns: auto;
 	padding: 10px;
 	height: 90%;
 }
+
