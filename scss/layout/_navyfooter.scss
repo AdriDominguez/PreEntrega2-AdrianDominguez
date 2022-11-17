@@ -29,16 +29,28 @@ footer {
 	font-size: 10px;
 	margin-top: 5vh;
 }
-.lasttext { //* TEXTO DE TODOS LOS DERECHOS RESERVADOS *//
+.fondo_lasttext { //* TEXTO DE TODOS LOS DERECHOS RESERVADOS *//
     @include bordes;
 	text-align: center;
 	margin-left: 5px;
+	margin-right: 5px;
 	background-color: $color-uno;
+	height: 5vh;
+	padding-top: 6px;
+	.text_lasttext {
+		background: linear-gradient(to right, transparent, $color-dos, $color-tres, $color-dos, transparent);
+		text-align: center;
+		font-size: 1rem;
+	}
 }
 .copyright { 
     @include bordes;
 	display: flex;
 	justify-content: space-between;
 	margin-left: 5px;
+	margin-right: 5px;
 	background-color: $color-uno;
+	height: 5vh;
+	padding-top: 6px;
+	font-size: 1rem;
 }
