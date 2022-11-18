@@ -4,6 +4,10 @@
     border-style: double;
 	border-color: $color-tres;
 }
+@mixin hoverlinks {
+	background-color: $color-cuatro;
+	border-radius: 2px;
+}
 //* NAV *//
 .fotologo {
 	text-align: center;
@@ -27,7 +31,7 @@ nav {
 footer {
 	display: grid;
 	font-size: 10px;
-	margin-top: 5vh;
+	margin-top: 10vh;
 }
 .fondo_lasttext { //* TEXTO DE TODOS LOS DERECHOS RESERVADOS *//
     @include bordes;
@@ -35,22 +39,60 @@ footer {
 	margin-left: 5px;
 	margin-right: 5px;
 	background-color: $color-uno;
-	height: 5vh;
-	padding-top: 6px;
+	height: 13vh;
+	padding-top: 15px;
 	.text_lasttext {
 		background: linear-gradient(to right, transparent, $color-dos, $color-tres, $color-dos, transparent);
 		text-align: center;
 		font-size: 1rem;
 	}
+	.logosmall {
+		padding-top: 2vh;
 }
-.copyright { 
+	img:hover {
+		background: linear-gradient(to right, transparent, $color-dos, $color-tres, $color-dos, transparent);
+		padding-left: 50vh;
+		padding-right: 50vh;
+		transition: 5s;
+	}
+}
+
+.fondo_copyright { 
     @include bordes;
-	display: flex;
+	display: grid;
+	grid-template-columns: 2;
 	justify-content: space-between;
 	margin-left: 5px;
 	margin-right: 5px;
 	background-color: $color-uno;
-	height: 5vh;
-	padding-top: 6px;
+	height: 10vh;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	font-size: 1rem;
+	padding-left: 3vh;
+}
+.term {
+	grid-column: 1;
+	a:hover {
+		@include hoverlinks;
+		color: $color-uno;
+	}
+}
+.politic {
+	grid-column: 1;
+	a:hover {
+		@include hoverlinks;
+		color: $color-uno;
+	}
+}
+.copyright {
+	grid-column: 1;
+}
+.irarriba {
+	grid-column: 2;
+	padding-right: 3vh;
+	a:hover {
+		@include hoverlinks;
+		color: $color-uno;
+	}
 }

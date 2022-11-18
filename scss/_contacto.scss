@@ -8,7 +8,6 @@
     @include bordes;
     background-color: $color-uno;
     display: grid;
-    justify-content: left;
     margin: 5px;
     padding-bottom: 110px;
     text-align: center;
@@ -51,6 +50,12 @@
 }
 .contacto1__form {
 	margin-top: 5vh;
+}
+input {
+	color: black;
+}
+#consulta {
+	color: black;
 }
 #botonenviar {
 	background-color: $color-tres;

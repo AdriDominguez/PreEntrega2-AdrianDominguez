@@ -7,21 +7,24 @@
 .fondo_ubi {
 	@include bordes;
 	grid-template-columns: 1;
-	max-height: 250vh;
+	max-height: 180vh;
 	max-width: 100vh;
-	height: 150vh;
 	background-color: $color-uno;
 	margin: 5px;
 	margin-top: 80px;
-	padding-bottom: 100px;
 	margin-bottom: 65px;
+	iframe {
+		width: 99%;
+		display: block;
+	}
 }
 
-	
 .textoubi1 {
 	text-align: center;
 	padding-left: 5px;
 	padding-bottom: 20px;
+	margin-left: 2vh;
+	margin-right: 2vh;
 }
 .textoubi2 {
 	padding-right: 50px;
