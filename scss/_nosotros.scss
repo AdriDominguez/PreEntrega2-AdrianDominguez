@@ -9,5 +9,16 @@
     @include bordes;
     background-color: $color-uno;
     margin-top: 80px;
-    padding-bottom: 110px;
+    padding-bottom: 150px;
+    max-height: 300vh;
+    height: 135vh;
+}
+
+.nosotros2 {
+    @include bordes;
+    background-color: $color-uno;
+    margin-top: 80px;
+    padding-bottom: 150px;
+    max-height: 300vh;
+    height: 135vh;
 }

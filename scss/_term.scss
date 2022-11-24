@@ -1,2 +1,9 @@
 //* SIN MEDIA QUERIES *//
 
+.terms {
+@include bordes;
+	background-color: $color-uno;
+	margin: 5px;
+	margin-top: 80px;
+	max-height: 135vh;
+}
