@@ -1,7 +1,7 @@
 <h1 align="center">:boom: ¡ Bienvenido a mi primer proyecto web ! :boom: </h1>
 
 Gracias a CoderHouse por brindarme las herramientas y conocimientos para desarrollar mi primer pagina web. <br>
-En este apartado les muestro mis habilidades como desarrolador.
+En este apartado les muestro mis habilidades como desarrolador. <strong>Link de la página abajo :point_down: </strong>
 
 Se utilizó en esta web:
 
@@ -22,5 +22,7 @@ Se utilizó en esta web:
 * <strong>GitHub:</strong> Repositorio subido a GitHub con sus branch, commits y gitignore. GitHub pages implementado :star:
 
 * <strong>Framework:</strong> Se utilizó la libreria Bootstrap5 para las 2 secciones de "Politic" y "Term"
+
+<strong> URL de la página subida al servidor :point_right: [LINK](https://tech-912.netlify.app/) :point_left: </strong>
 
 <h3 align="center"> Espero que esta información les sirva :raised_hands: </h6> 
