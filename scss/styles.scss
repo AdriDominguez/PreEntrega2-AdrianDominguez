@@ -16,18 +16,20 @@
 @import "term";
 @import "politic";
 
-//* RESTO DEL SCSS *//
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
 }
+
 * {
 	color: #ffffff;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,11 +39,11 @@
 
 //* MIXIN *//
 @mixin bordes {
-    border-style: double;
+	border-style: double;
 	border-color: $color-tres;
 }
-@mixin background{
-    background-attachment: fixed;
+@mixin background {
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -49,27 +51,30 @@
 	background-color: $color-cuatro;
 	border-radius: 2px;
 }
+
 body {
-    @include background;
+	@include background;
 	background-image: url(foto.jpg);
 }
+
 a {
 	color: white !important;
 }
 
 //* MEDIA QUERIES *// VISTA DESKTOP
 @media only screen and (min-width: $ancho) {
-	nav { @include bordes;
-	display: grid;
-	justify-content: space-evenly;
-	background-color: $color-uno;
-	margin: 5px;
-	grid-template-columns: 5;
-	font-size: 15px;
-	word-spacing: 100px;
-		.menu {
+	nav {
+		@include bordes;
+		display: grid;
+		justify-content: space-evenly;
+		background-color: $color-uno;
 		margin: 5px;
-		a:hover {
+		grid-template-columns: 5;
+		font-size: 15px;
+		word-spacing: 100px;
+		.menu {
+			margin: 5px;
+			a:hover {
 				@include hoverlinks;
 			}
 		}
@@ -87,12 +92,14 @@ a {
 		opacity: .70;
 		line-height: 5px;
 	}
+
 	.index1 {
 		padding-bottom: 130px;
 		margin-left: 30vh;
 		margin-right: 30vh;
 		max-height: 103vh;
 	}
+
 	.lista_index {
 		position: absolute;
 		display: grid;
@@ -100,9 +107,11 @@ a {
 		padding-left: 5vh;
 		width: 40%;
 	}
+
 	.listas_index {
 		list-style-image: url(../photos/check.png);
 	}
+
 	.list1 {
 		background: linear-gradient(to right, transparent, $color-uno, $color-dos, $color-tres, $color-blanco, transparent);
 		margin-bottom: 3vh;
@@ -110,32 +119,123 @@ a {
 		border-style: solid 1px;
 		border-radius: 5px;
 	}
+
 	.list2 {
 		background: linear-gradient(to right, transparent, $color-uno, $color-dos, $color-tres, $color-blanco, transparent);
 		margin-bottom: 3vh;
 		margin-left: 5vh;
 	}
+
 	.list3 {
 		background: linear-gradient(to right, transparent, $color-uno, $color-dos, $color-tres, $color-blanco, transparent);
 		margin-top: 3vh;
 		margin-left: 5vh;
 	}
+
+	@mixin center($extend: true) {
+		@if $extend {
+			@extend %center;
+		}
+		@else {
+			position: absolute;
+			left: 50%;
+			margin-top: 10vh;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+	%center {
+		@include center($extend: false);
+	}
+	button {
+		@include center;
+		background: $color-uno;
+		color: $color-blanco;
+		width: 200px;
+		height: 60px;
+		border: 0;
+		font-size: 18px;
+		border-radius: 4px;
+		font-family: 'Raleway', sans-serif;
+		transition: .6s;
+		overflow: hidden;
+		position: relative;
+		a {
+			text-decoration: none !important;
+			&:focus {
+				outline: 0;
+			}
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			background: $color-dos;
+			width: 60px;
+			height: 100%;
+			left: 0;
+			top: 0;
+			opacity: .5;
+			filter: blur(30px);
+			transform: translateX(-100px) skewX(-15deg);
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			background: $color-dos;
+			width: 30px;
+			height: 100%;
+			left: 30px;
+			top: 0;
+			opacity: 0;
+			filter: blur(5px);
+			transform: translateX(-100px) skewX(-15deg);
+		}
+		&:hover {
+			background: $color-tres;
+			cursor: pointer;
+			&:before {
+				transform: translateX(300px) skewX(-15deg);
+				opacity: 0.6;
+				transition: .7s;
+			}
+			&:after {
+				transform: translateX(300px) skewX(-15deg);
+				opacity: 1;
+				transition: .7s;
+			}
+		}
+	}
+
+	.fondo_botones {
+		@include bordes;
+		display: grid;
+		background: radial-gradient($color-dos, $color-uno);
+		margin-left: 70vh;
+		margin-right: 70vh;
+		max-height: 103vh;
+	}
+
 	.fondo_foto1 {
 		img {
 			height: 100%;
 		}
 	}
+
 	.fondoweb {
 		display: none;
 	}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		height: 5vh;
 	}
+
 	footer {
 		font-size: 15px;
 	}
+
 	.servicios1 {
 		margin-left: 35vh;
 		margin-right: 35vh;
@@ -143,6 +243,7 @@ a {
 		height: 25vh;
 		padding-bottom: 90px;
 	}
+
 	.fondoservicios {
 		@include bordes;
 		background-color: $color-uno;
@@ -152,6 +253,7 @@ a {
 		text-align: center;
 		height: 95vh;
 	}
+
 	#slider {
 		background: $color-blanco;
 		width: 600px;
@@ -161,12 +263,20 @@ a {
 		border-radius: .5rem;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
 	}
+
 	.nosotros1 {
 		margin-left: 35vh;
 		margin-right: 35vh;
 		text-align: center;
-		height: 25vh;
+		height: 35vh;
+		padding-bottom: 150px;
+		margin-bottom: -40px;
 	}
+
+	.nosotros1_parrafo {
+		padding: 5px 5px;
+	}
+
 	.nosotros2 {
 		display: flex;
 		flex: wrap;
@@ -174,7 +284,9 @@ a {
 		margin-left: 35vh;
 		margin-right: 35vh;
 		height: 25vh;
+		padding-bottom: 150px;
 	}
+
 	.caja {
 		width: 250px;
 		height: 250px;
@@ -185,16 +297,18 @@ a {
 		text-align: center;
 		position: relative;
 	}
-	.caja img{
-		margin-top: 50px;
+
+	.caja img {
+		margin-top: 58px;
 		transition: all 400ms;
 	}
 
-	.caja h4{
+	.caja h4 {
 		margin-top: 10px;
 		transition: all 500ms;
 	}
-	.caja .container_parrafo{
+
+	.caja .container_parrafo {
 		width: 100%;
 		height: 150px;
 		position: absolute;
@@ -202,30 +316,35 @@ a {
 		bottom: 0;
 		border-radius: 0px 0px 14px 14px;
 		overflow: hidden;
-		
 	}
-	.caja p{
+
+	.caja p {
 		font-size: 15px;
 		opacity: 0;
 		transform: translateY(150px);
 		transition: all 600ms;
 	}
+
 	//* HOVER *//
 	.caja:hover {
 		background: $color-dos;
 	}
+
 	.caja:hover img {
 		transform: translateY(-57px);
 	}
+
 	.caja:hover h4 {
 		transform: translateY(-57px);
 	}
+
 	.caja:hover .container_parrafo p {
 		transform: translateY(0px);
 		opacity: 1;
 	}
-	.fondo_ubi{ 
-        @include bordes;
+
+	.fondo_ubi {
+		@include bordes;
 		display: grid;
 		background-color: $color-uno;
 		margin: 5px;
@@ -236,7 +355,8 @@ a {
 		padding-bottom: 350px;
 		height: 40vh;
 		max-width: 70%;
-		}
+	}
+
 	.textoubi1 {
 		padding-bottom: 45px;
 		padding-top: 30px;
@@ -245,6 +365,7 @@ a {
 		border: none;
 		grid-column: 1;
 	}
+
 	.textoubi2 {
 		float: left;
 		padding-right: 260px;
@@ -255,6 +376,7 @@ a {
 			transform: scale(1.3);
 		}
 	}
+
 	#iframe {
 		height: 50vh;
 		width: 65vh;
@@ -263,8 +385,9 @@ a {
 		margin-left: 50vh;
 		margin-top: -55vh;
 	}
+
 	.contacto1 {
-        @include bordes;
+		@include bordes;
 		background-color: $color-uno;
 		display: grid;
 		grid-template-columns: auto auto;
@@ -277,6 +400,7 @@ a {
 		margin-left: 30vh;
 		margin-right: 30vh;
 	}
+
 	.contacto1__contact {
 		display: grid;
 		grid-template-columns: auto;
@@ -285,47 +409,52 @@ a {
 		width: 50%;
 		padding-bottom: 3vh;
 	}
+
 	.telefono {
 		text-align: left;
 		margin-left: 25px;
 		grid-column: 1;
 	}
+
 	.redes {
 		grid-column: 1;
 		text-align: left;
 		margin-left: 25px;
 	}
+
 	.fbig {
 		grid-column: 1;
 	}
+
 	.mail {
 		grid-column: 1;
 	}
+
 	.correo {
 		grid-column: 1;
 	}
+
 	.contacto1__form {
 		grid-template-columns: auto;
 		padding-left: 90vh;
 		position: absolute;
 		text-align: center;
 	}
+
 	.terms {
-		max-height: 100%;
-        padding-bottom: 100px;
+		max-height: 160vh;
+		padding-bottom: 60px;
 		margin-left: 30vh;
 		margin-right: 30vh;
-		height: 75vh;
-    }
-	
+	}
 }
 //* VISTA MOBIL *//
 @media only screen and (max-width: ($ancho - 200)) {
 	.ocultar_div {
 		display: none;
-	#iframe {
-		width: 5vh;
-		margin-top: 30vh;
+		#iframe {
+			width: 5vh;
+			margin-top: 30vh;
 		}
 	}
 }

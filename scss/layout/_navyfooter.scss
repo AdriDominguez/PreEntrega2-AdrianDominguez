@@ -1,7 +1,7 @@
 //* SIN MEDIA QUERIES *//
 
 @mixin bordes {
-    border-style: double;
+	border-style: double;
 	border-color: $color-tres;
 }
 @mixin hoverlinks {
@@ -13,7 +13,7 @@
 	text-align: center;
 }
 nav {
-    @include bordes;
+	@include bordes;
 	display: grid;
 	justify-content: space-evenly;
 	background-color: $color-uno;
@@ -25,16 +25,15 @@ nav {
 		margin: 5px;
 	}
 }
-	
-
 //* FOOTER *//
 footer {
 	display: grid;
 	font-size: 10px;
 	margin-top: 10vh;
 }
-.fondo_lasttext { //* TEXTO DE TODOS LOS DERECHOS RESERVADOS *//
-    @include bordes;
+.fondo_lasttext {
+	//* TEXTO DE TODOS LOS DERECHOS RESERVADOS *//
+	@include bordes;
 	text-align: center;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -46,9 +45,11 @@ footer {
 		text-align: center;
 		font-size: 1rem;
 	}
+
 	.logosmall {
 		padding-top: 2vh;
-}
+	}
+
 	img:hover {
 		background: linear-gradient(to right, transparent, $color-dos, $color-tres, $color-dos, transparent);
 		padding-left: 50vh;
@@ -57,8 +58,8 @@ footer {
 	}
 }
 
-.fondo_copyright { 
-    @include bordes;
+.fondo_copyright {
+	@include bordes;
 	display: grid;
 	grid-template-columns: 2;
 	justify-content: space-between;
@@ -71,6 +72,7 @@ footer {
 	font-size: 1rem;
 	padding-left: 3vh;
 }
+
 .term {
 	grid-column: 1;
 	a:hover {
@@ -78,6 +80,7 @@ footer {
 		color: $color-uno;
 	}
 }
+
 .politic {
 	grid-column: 1;
 	a:hover {
@@ -85,9 +88,11 @@ footer {
 		color: $color-uno;
 	}
 }
+
 .copyright {
 	grid-column: 1;
 }
+
 .irarriba {
 	grid-column: 2;
 	padding-right: 3vh;

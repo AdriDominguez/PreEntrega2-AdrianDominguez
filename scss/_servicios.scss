@@ -1,12 +1,11 @@
 //* SIN MEDIA QUERIES *//
 
 @mixin bordes {
-    border-style: double;
+	border-style: double;
 	border-color: $color-tres;
 }
-
 .servicios1 {
-    @include bordes;
+	@include bordes;
 	background-color: $color-uno;
 	margin: 5px;
 	margin-top: 80px;
@@ -27,14 +26,17 @@
 	margin: 5px;
 	margin-top: 30px;
 }
+
 ul {
 	list-style: none;
 }
+
 .listas {
 	border-style: ridge;
 	border-color: $color-dos;
 	-webkit-text-stroke: $color-cuatro;
 }
+
 .li1 {
 	background: (white);
 	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
@@ -43,6 +45,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li2 {
 	background: (white);
 	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
@@ -51,6 +54,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li3 {
 	background: (white);
 	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
@@ -59,6 +63,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li4 {
 	background: (white);
 	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
@@ -67,6 +72,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li5 {
 	background: (white);
 	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
@@ -75,6 +81,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li6 {
 	background: (white);
 	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
@@ -83,6 +90,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li7 {
 	background: (white);
 	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
@@ -91,6 +99,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li8 {
 	background: (white);
 	background: linear-gradient(90deg, $color-uno 0%, $color-dos 50%, $color-tres 100%);
@@ -99,6 +108,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 .li9 {
 	background: (white);
 	background: linear-gradient(90deg, $color-tres 0%, $color-dos 50%, $color-uno 100%);
@@ -107,6 +117,7 @@ ul {
 	text-align: center;
 	color: white;
 }
+
 #slider {
 	.foto_slide {
 		-moz-box-sizing: border-box;
@@ -138,12 +149,14 @@ ul {
 		}
 	}
 }
+
 .foto_slide {
 	img {
 		margin-left: -55px;
 		transform: skewX(20deg);
 	}
 }
+
 #fotoservicios {
 	margin-bottom: 80px;
 }
