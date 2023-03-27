@@ -15,6 +15,7 @@
 @import "contacto";
 @import "term";
 @import "politic";
+@import "productos";
 
 @keyframes gradient {
 	0% {
@@ -86,7 +87,7 @@ a {
 		-webkit-text-stroke: 1px $color-tres;
 		font-size: 40px;
 		text-align: center;
-		background-color: $color-uno;
+		background-color: $color-cuatro;
 		filter: alpha(opacity=70);
 		-moz-opacity: .70;
 		opacity: .70;

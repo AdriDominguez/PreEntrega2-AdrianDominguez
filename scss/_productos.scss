@@ -1,0 +1,22 @@
+.containerbarraup {
+    background-color: $color-uno;
+    height: 50px;
+    border-style: groove;
+    border-color: $color-uno;
+    border-bottom-color: $color-cuatro;
+    img.log {
+        padding-top: 10px;
+        padding-right: 45px;
+        float: right;
+    }
+
+    img.carrito { 
+        padding-top: 10px;
+        padding-right: 15px;
+        float: right;
+    }
+
+.barraup {
+    color: none;
+}
+}

@@ -500,6 +500,23 @@ input {
   text-align: center;
   padding-bottom: 10px; }
 
+.containerbarraup {
+  background-color: #00171f;
+  height: 50px;
+  border-style: groove;
+  border-color: #00171f;
+  border-bottom-color: #00a8e8; }
+  .containerbarraup img.log {
+    padding-top: 10px;
+    padding-right: 45px;
+    float: right; }
+  .containerbarraup img.carrito {
+    padding-top: 10px;
+    padding-right: 15px;
+    float: right; }
+  .containerbarraup .barraup {
+    color: none; }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
@@ -546,7 +563,7 @@ a {
     -webkit-text-stroke: 1px #007ea7;
     font-size: 40px;
     text-align: center;
-    background-color: #00171f;
+    background-color: #00a8e8;
     filter: alpha(opacity=70);
     -moz-opacity: .70;
     opacity: .70;
