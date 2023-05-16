@@ -8,16 +8,12 @@
     <meta name="description" content="Pagina web dedicada al rubro de la tecnologia. Reparación de equipos, venta de insumos
     instalación de camaras de seguridad, mantenimiento general, actualización de gps. Todo esto ofrecemos en TECH912">
     <meta name="keywords" content="TECH, PC, COMPUTADORA, NOTEBOOK, SERVICIO TECNICO, INFORMATICA, REDES">
-    <link rel="shortcut icon" href="photos/favicontech.png">
     <link rel="stylesheet" href="../estilo/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Comprá tu PC</title>
 </head>
 <body>
-    <div class="containerbarraup">
-        <div class="barraup"> PRODUCTOS <img src="../photos/carrito-de-compras.png" class="carrito" alt="carro"> <img src="../photos/acceso.png" class="log" alt="acceso"</div>
-        </div>
     <div class="fotologo"><img src="../photos/fotologo.png" alt="fotologo" id="fotologo"></div>
     <nav>
         <div class="menu">
@@ -26,61 +22,151 @@
             <a href="Nosotros.html">NOSOTROS</a>
             <a href="Ubicación.html">UBICACIÓN</a>
             <a href="Contacto.html">CONTACTO</a>
+            <a href="Productos.html">PRODUCTOS</a>
+            <div class="divcarrito"><button id="boton-carrito"> <img src="../photos/carrito-de-compras.png" id="fotocarrito"><span id="contadorCarrito">0</span></button>
         </div>
+    </div>
     </nav>
     <hr>
 
-    <main>
-        <div id="container-general">
-            <section id="section-paquetes">
-                <div class="card-paquete"> <div class="img-container">
-                            <img src="/photos/1g.jpg" alt="Pc Oficina" class="img-paquete">
-                            </div>
-                            <div class="info-paquete">
-                            <p class="font">Pc Oficina Celeron G5950 4GB RAM</p>
-                            <strong class="font">$37000</strong>
-                            <button class="boton" id="btn1"> Agregar al carrito </button>
-                            </div></div><div class="card-paquete"> <div class="img-container">
-                            <img src="/photos/2g.png" alt="Pc Gamer" class="img-paquete">
-                            </div>
-                            <div class="info-paquete">
-                            <p class="font">Pc Gamer Ryzen5 5650 8GB RAM + Radeon Vega </p>
-                            <strong class="font">$70000</strong>
-                            <button class="boton" id="btn2"> Agregar al carrito </button>
-                            </div></div><div class="card-paquete"> <div class="img-container">
-                            <img src="/photos/3g.png" alt="Pc Gamer Elite" class="img-paquete">
-                            </div>
-                            <div class="info-paquete">
-                            <p class="font">Pc Gamer Elite I7-10700k 16GB RAM + Nvdia 2060GTI</p>
-                            <strong class="font">$135000</strong>
-                            <button class="boton" id="btn3"> Agregar al carrito </button>
-                            </div></div><div class="card-paquete"> <div class="img-container">
-                            <img src="/photos/4g.jpg" alt="Pc Gamer Extreme" class="img-paquete">
-                            </div>
-                            <div class="info-paquete">
-                            <p class="font">Pc Gamer Extreme i9-10770k 32GB RAM + Nvidia 3060</p>
-                            <strong class="font">$265000</strong>
-                            <button class="boton" id="btn4"> Agregar al carrito </button>
-                            </div></div></section>
-            <section id="section-carrito">
+ <main id="contenedor-paquetes">
+    <div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete1.jpg" alt="">
+        
+        <p>*No incluye alimentos.</p>
+    
+        <p class="precioPaquete">Precio:$ 540</p>
+        <button id="agregar1" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete2.png" alt="">
+        
+        <p>*Servicio Ida y vuelta.</p>
+    
+        <p class="precioPaquete">Precio:$ 220</p>
+        <button id="agregar2" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete3.jpg" alt="">
+        
+        <p>*Solo adulto.</p>
+    
+        <p class="precioPaquete">Precio:$ 350</p>
+        <button id="agregar3" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete4.png" alt="">
+        
+        <p>*Servicio Ida o vuelta.</p>
+    
+        <p class="precioPaquete">Precio:$ 125</p>
+        <button id="agregar4" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete5.jpg" alt="">
+        
+        <p>*Paquete individual.</p>
+    
+        <p class="precioPaquete">Precio:$ 15</p>
+        <button id="agregar5" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete6.jpg" alt="">
+        
+        <p>*Lata de 355 ml.</p>
+    
+        <p class="precioPaquete">Precio:$ 25</p>
+        <button id="agregar6" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete7.png" alt="">
+        
+        <p>*No incluye alimentos.</p>
+    
+        <p class="precioPaquete">Precio:$ 450</p>
+        <button id="agregar7" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete8.png" alt="">
+        
+        <p>*No incluye alimentos.</p>
+    
+        <p class="precioPaquete">Precio:$ 370</p>
+        <button id="agregar8" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete9.png" alt="">
+        
+        <p>*No incluye alimentos.</p>
+    
+        <p class="precioPaquete">Precio:$ 420</p>
+        <button id="agregar9" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete10.png" alt="">
+        
+        <p>*No incluye alimentos.</p>
+    
+        <p class="precioPaquete">Precio:$ 510</p>
+        <button id="agregar10" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete11.png" alt="">
+        
+        <p>*Sin alimentos, viaje redondo.</p>
+    
+        <p class="precioPaquete">Precio:$ 250</p>
+        <button id="agregar11" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div><div class="paquete">
+        <img class="cardimg" src="./img/paquetes/paquete12.png" alt="">
+        
+        <p>*Sin alimentos, viaje redondo.</p>
+    
+        <p class="precioPaquete">Precio:$ 339</p>
+        <button id="agregar12" class="boton-agregar">Agregar <i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
+    
+        </div>
     </main>
+    <div class="modal-contenedor modal-active">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle" aria-hidden="true"></i></button>
+            <div id="carrito-contenedor">
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <button id="comprar-carrito2" class="boton-comprar">Comprar</button>
+        </div>
+    </div>
+    
 
     <footer>
-        <div class="fondo_copyright">
+        <div class="fondo_copyright h-100">
             <div class="term"><a href="Term.html"> Terminos y condiciones </a></div>
             <div class="politic"> <a href="Politic.html"> Política de privacidad</a> </div>
-            <div class="irarriba"> <a href="Servicios.html"> Ir arriba ↑</a></div>
+            <div class="irarriba"> <a href="Productos.html"> Ir arriba ↑</a></div>
             <div class="copyright">© Copyright 2022 |</div>
         </div>
-        <div class="fondo_lasttext">
+        <div class="fondo_lasttext h-100">
             <div class="text_lasttext">TODOS LOS DERECHOS RESERVADOS
             </div>
-            <div class="logosmall"><a href="../index.html"><img src="../photos/logosmall.png" alt="logofooter"> </a> </div>
+            <div class="logosmall mb-2"><a href="../index.html"><img src="../photos/logosmall.png" alt="logofooter"> </a> </div>
         </div>
 
     </footer>
-    <script src="../js/paquetes.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/app.js"></script>
+    <script defer src="../js/modal.js"></script>
+    <script src="../js/stock.json"></script>
 </body>
 </html>

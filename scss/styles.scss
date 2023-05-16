@@ -147,7 +147,7 @@ a {
 	%center {
 		@include center($extend: false);
 	}
-	button {
+	.botton {
 		@include center;
 		background: $color-uno;
 		color: $color-blanco;
@@ -160,6 +160,7 @@ a {
 		transition: .6s;
 		overflow: hidden;
 		position: relative;
+		text-align: center;
 		a {
 			text-decoration: none !important;
 			&:focus {

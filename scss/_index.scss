@@ -61,7 +61,7 @@
 	transform: translateX(-50%) translateY(-50%);
 }
 
-button {
+.botton {
 	@include center;
 	background: $color-uno;
 	color: $color-blanco;
@@ -150,4 +150,18 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-end;
+}
+
+button {
+	background: $color-uno;
+	color: $color-blanco;
+	width: 200px;
+	height: 60px;
+	border: 0;
+	font-size: 18px;
+	border-radius: 4px;
+	font-family: 'Raleway', sans-serif;
+	transition: .6s;
+	overflow: hidden;
+	position: relative;
 }
