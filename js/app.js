@@ -156,12 +156,9 @@ const actualizarCarrito = () => {
         if (carrito.length >= 1) {
             Swal.fire({                                 
                 
-                title: 'Agradece tu compra y te desea feliz viaje',
-/*                text: '¡Feliz Viaje!',*/
-                imageUrl: '/img/paquetes/logo.png',
-                imageWidth: 200,
-                imageHeight: 100,
-                imageAlt: 'Custom image',
+                title: 'Gracias por tu compra',
+
+                
                 icon:'success',
               })
             carrito.length = 0
