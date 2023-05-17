@@ -1,15 +1,12 @@
 [
 
-    {"id": 1,  "nombre": "TRANSPORTE REDONDO + ACCESO SIX FLAGS", "cantidad": 1, "desc": "*No incluye alimentos.", "precio": 540, "img": "./img/paquetes/paquete1.jpg"},
-    {"id": 2,  "nombre": "TRANSPORTE REDONDO A SIX FLAGS", "cantidad": 1, "desc": "*Servicio Ida y vuelta.", "precio": 220, "img": "./img/paquetes/paquete2.png"},
-    {"id": 3,  "nombre": "ACCESO A SIX FLAGS", "cantidad": 1, "desc": "*Solo adulto.", "precio": 350, "img": "./img/paquetes/paquete3.jpg"},
-    {"id": 4,  "nombre": "TRANSPORTE SENCILLO A SIX FLAGS", "cantidad": 1, "desc": "*Servicio Ida o vuelta.", "precio": 125, "img": "./img/paquetes/paquete4.png"},
-    {"id": 5,  "nombre": "SANDWICH DE JAMÓN", "cantidad": 1, "desc": "*Paquete individual.", "precio": 15, "img": "./img/paquetes/paquete5.jpg"},
-    {"id": 6,  "nombre": "REFRESCO DE LATA 355 ML", "cantidad": 1, "desc": "*Lata de 355 ml.", "precio": 25,  "img": "./img/paquetes/paquete6.jpg"},
-    {"id": 7,  "nombre": "TRANSPORTE REDONDO + ACCESO BALNEARIO EL ROLLO", "cantidad": 1, "desc": "*No incluye alimentos.", "precio": 450,  "img": "./img/paquetes/paquete7.png"},
-    {"id": 8,  "nombre": "TRANSPORTE REDONDO + ACCESO BALNEARIO TEMIXCO", "cantidad": 1, "desc": "*No incluye alimentos.", "precio": 370,  "img": "./img/paquetes/paquete8.png"},
-    {"id": 9,  "nombre": "TRANSPORTE REDONDO + ACCESO PARQUE LAS ESTACAS", "cantidad": 1, "desc": "*No incluye alimentos.", "precio": 420,  "img": "./img/paquetes/paquete9.png"},
-    {"id": 10, "nombre": "TRANSPORTE REDONDO + PIRÁMIDES TEOTIHUACÁN", "cantidad": 1, "desc": "*No incluye alimentos.", "precio": 510,  "img": "./img/paquetes/paquete10.png"},
-    {"id": 11, "nombre": "TRANSPORTE ABORDO DEL CUERNABUS", "cantidad": 1, "desc": "*Sin alimentos, viaje redondo.", "precio": 250, "img": "./img/paquetes/paquete11.png"},
-    {"id": 12, "nombre": "TRANSPORTE REDONDO + ACCESO BALNEARIO OAXTEPEC", "cantidad": 1, "desc": "*Sin alimentos, viaje redondo.", "precio": 339, "img": "./img/paquetes/paquete12.png"}
+    {"id": 1,  "nombre": "PC GAMER XTREME ", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 7 5700X + 16GB (2x8GB) + RTX 3070 8Gb + 500GB NVME", "precio": 925000, "img": "./img/paquetes/paquete1.jpg"},
+    {"id": 2,  "nombre": "PC GAMER XTREME 2", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I7 10700F + 16GB (2x8GB) + RX 6800 XT 16Gb + 500GB NVME", "precio": 814999, "img": "./img/paquetes/paquete2.png"},
+    {"id": 3,  "nombre": "PC GAMER ELITE", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I7 10700F + 8GB + RTX 2060 SUPER 8GB", "precio": 680000, "img": "./img/paquetes/paquete3.jpg"},
+    {"id": 4,  "nombre": "PC GAMER ELITE2", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I5 10400F + 8GB + RX 6700 10Gb", "precio": 525000, "img": "./img/paquetes/paquete4.png"},
+    {"id": 5,  "nombre": "PC GAMER ELITE3", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I5 10400F + 8GB + GTX 1660 6Gb", "precio": 418000, "img": "./img/paquetes/paquete5.jpg"},
+    {"id": 6,  "nombre": "PC GAMER BASIC", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 7 5700G + 16GB (2x8GB) 3200Mhz + Radeon VEGA", "precio": 344999,  "img": "./img/paquetes/paquete6.jpg"},
+    {"id": 7,  "nombre": "PC GAMER BASIC2", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 5 4650G + 8GB (2x4GB) + Radeon VEGA", "precio": 241999,  "img": "./img/paquetes/paquete7.png"},
+    {"id": 8,  "nombre": "PC HOGAR U OFICINA", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Core I5 10400 + 8GB + SSD", "precio": 229999,  "img": "./img/paquetes/paquete8.png"},
+    {"id": 9,  "nombre": "PC HOGAR U OFICINA 2", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Celeron G5905 + 4GB + SSD", "precio": 119999,  "img": "./img/paquetes/paquete9.png"},
 ]

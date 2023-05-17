@@ -142,7 +142,7 @@ const actualizarCarrito = () => {
         <img class="cardimg2"  src=${pqt.img} alt= "">
         <p>Precio:$${pqt.precio}</p>
         <p>Cantidad: <span id="cantidad">${pqt.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito(${pqt.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        <button onclick="eliminarDelCarrito(${pqt.id})" class="boton-eliminar"><i class="fa-solid fa-trash"></i></button>
         `
         contenedorCarrito.appendChild(div)
 

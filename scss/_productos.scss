@@ -183,11 +183,12 @@
   .modal-carrito #carritoCerrar {
     position: absolute;
     top: 15px;
-    right: 15px;
+    margin-right: 15px;
     font-size: 20px;
     color: #1f4b95;
     border: none;
     background-color: white;
+    width: 20px;
   }
   .modal-carrito #carritoCerrar:hover {
     cursor: pointer;
@@ -204,7 +205,6 @@
     border: none;
     color: white;
     font-size: 20px;
-    background-color: #ec641c;
     transition: all .3s;
     height: 100%;
   }
@@ -223,7 +223,6 @@
     float: right;
     align-items: right;
     justify-items: right;
-    margin-left: 80px;
   }
   
   #contenedor-paquetes {
@@ -242,13 +241,14 @@
     margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    background-color: $color-cuatro;
   }
   
   .paquete:hover {
-    border: 2px solid #1f4b95;
+    border: 2px solid rgba(0, 0, 0, 0.384);
     transform: scale(1.1, 1.1);
     transition: ease .8s;
-    box-shadow: 4px 4px #1f4b95;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.384);
   }
   
   .precioPaquete {
@@ -256,7 +256,7 @@
   }
   
   .boton-agregar {
-    background-color: #ec641c;
+    background-color: $color-uno;
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -302,6 +302,10 @@
     transition: all .5s;
     opacity: 0;
     visibility: hidden;
+  
+    p {
+      color: black;
+    }
   }
   
   .modal-active {
@@ -331,7 +335,6 @@
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: #1f4b95;
     border: none;
     background-color: white;
   }
@@ -377,4 +380,3 @@
   #fotocarrito {
     color: white;
   }
-
