@@ -8,5 +8,5 @@
     {"id": 6,  "nombre": "PC GAMER BASIC", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 7 5700G + 16GB (2x8GB) 3200Mhz + Radeon VEGA", "precio": 344999,  "img": "./img/paquetes/paquete6.jpg"},
     {"id": 7,  "nombre": "PC GAMER BASIC2", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 5 4650G + 8GB (2x4GB) + Radeon VEGA", "precio": 241999,  "img": "./img/paquetes/paquete7.png"},
     {"id": 8,  "nombre": "PC HOGAR U OFICINA", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Core I5 10400 + 8GB + SSD", "precio": 229999,  "img": "./img/paquetes/paquete8.png"},
-    {"id": 9,  "nombre": "PC HOGAR U OFICINA 2", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Celeron G5905 + 4GB + SSD", "precio": 119999,  "img": "./img/paquetes/paquete9.png"},
+    {"id": 9,  "nombre": "PC HOGAR U OFICINA 2", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Celeron G5905 + 4GB + SSD", "precio": 119999,  "img": "./img/paquetes/paquete9.png"}
 ]
