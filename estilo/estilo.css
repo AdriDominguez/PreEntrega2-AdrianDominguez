@@ -8,12 +8,18 @@ nav {
   display: grid;
   justify-content: space-evenly;
   background-color: #00171f;
+  grid-template-columns: 7;
   margin: 5px;
-  grid-template-columns: 5;
   font-size: 12px;
   word-spacing: 15px; }
   nav .menu {
     margin: 5px; }
+  nav .divcarrito {
+    display: grid;
+    justify-content: right;
+    position: relative;
+    margin-left: 25px;
+    padding-left: 50px; }
 
 footer {
   color: white;
@@ -139,15 +145,18 @@ p {
   background-color: #00171f;
   margin: 5px;
   margin-top: 80px;
-  max-height: 95vh; }
+  max-height: 95vh;
+  color: white; }
 
 .primertexto__parrafo {
   text-align: center;
   margin-left: 1vh;
-  margin-right: 1vh; }
+  margin-right: 1vh;
+  color: white; }
 
 .lista_index {
-  display: none; }
+  display: none;
+  color: white; }
 
 .fondo_foto1 {
   height: 100%; }
@@ -285,7 +294,8 @@ button {
 .servicios1__texto {
   display: grid;
   text-align: center;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  color: white; }
 
 .fondoservicios {
   border-style: double;
@@ -417,7 +427,8 @@ ul {
   .nosotros1 .nosotros1_parrafo {
     padding: 5px 5px;
     text-align: center;
-    height: auto; }
+    height: auto;
+    color: white; }
 
 .nosotros2 {
   border-style: double;
@@ -466,12 +477,14 @@ ul {
   padding-left: 5px;
   padding-bottom: 20px;
   margin-left: 2vh;
-  margin-right: 2vh; }
+  margin-right: 2vh;
+  color: white; }
 
 .textoubi2 {
   padding-right: 50px;
   line-height: 85px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  color: white; }
 
 .contacto1 {
   border-style: double;
@@ -481,7 +494,8 @@ ul {
   margin: 5px;
   padding-bottom: 110px;
   text-align: center;
-  margin-bottom: 15vh; }
+  margin-bottom: 15vh;
+  color: white; }
 
 .contacto1__contact {
   display: grid;
@@ -730,7 +744,9 @@ input {
   color: white;
   font-size: 20px;
   transition: all .3s;
-  height: 100%; }
+  height: 100%;
+  width: 50px;
+  background-color: #003459; }
 
 #boton-carrito:hover {
   cursor: pointer;
@@ -760,7 +776,7 @@ input {
   margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
-  background-color: #00a8e8; }
+  background-color: #003459; }
 
 .paquete:hover {
   border: 2px solid rgba(0, 0, 0, 0.384);

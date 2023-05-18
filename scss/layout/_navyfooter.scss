@@ -17,12 +17,19 @@ nav {
 	display: grid;
 	justify-content: space-evenly;
 	background-color: $color-uno;
+	grid-template-columns: 7;
 	margin: 5px;
-	grid-template-columns: 5;
 	font-size: 12px;
 	word-spacing: 15px;
 	.menu {
 		margin: 5px;
+	}
+	.divcarrito {
+		display: grid;
+		justify-content: right;
+		position: relative;
+		margin-left: 25px;
+		padding-left: 50px;
 	}
 }
 //* FOOTER *//

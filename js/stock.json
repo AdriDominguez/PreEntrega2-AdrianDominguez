@@ -1,12 +1,12 @@
 [
 
-    {"id": 1,  "nombre": "PC GAMER XTREME ", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 7 5700X + 16GB (2x8GB) + RTX 3070 8Gb + 500GB NVME", "precio": 925000, "img": "./img/paquetes/paquete1.jpg"},
-    {"id": 2,  "nombre": "PC GAMER XTREME 2", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I7 10700F + 16GB (2x8GB) + RX 6800 XT 16Gb + 500GB NVME", "precio": 814999, "img": "./img/paquetes/paquete2.png"},
-    {"id": 3,  "nombre": "PC GAMER ELITE", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I7 10700F + 8GB + RTX 2060 SUPER 8GB", "precio": 680000, "img": "./img/paquetes/paquete3.jpg"},
-    {"id": 4,  "nombre": "PC GAMER ELITE2", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I5 10400F + 8GB + RX 6700 10Gb", "precio": 525000, "img": "./img/paquetes/paquete4.png"},
-    {"id": 5,  "nombre": "PC GAMER ELITE3", "cantidad": 1, "desc": "PC Gamer Armada | Intel Core I5 10400F + 8GB + GTX 1660 6Gb", "precio": 418000, "img": "./img/paquetes/paquete5.jpg"},
-    {"id": 6,  "nombre": "PC GAMER BASIC", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 7 5700G + 16GB (2x8GB) 3200Mhz + Radeon VEGA", "precio": 344999,  "img": "./img/paquetes/paquete6.jpg"},
-    {"id": 7,  "nombre": "PC GAMER BASIC2", "cantidad": 1, "desc": "PC Gamer Armada | AMD Ryzen 5 4650G + 8GB (2x4GB) + Radeon VEGA", "precio": 241999,  "img": "./img/paquetes/paquete7.png"},
-    {"id": 8,  "nombre": "PC HOGAR U OFICINA", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Core I5 10400 + 8GB + SSD", "precio": 229999,  "img": "./img/paquetes/paquete8.png"},
-    {"id": 9,  "nombre": "PC HOGAR U OFICINA 2", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Celeron G5905 + 4GB + SSD", "precio": 119999,  "img": "./img/paquetes/paquete9.png"}
+    {"id": 1,  "nombre": "PC GAMER XTREME ", "cantidad": 1, "desc": "PC Gamer Xtreme | AMD Ryzen 7 5700X + 16GB (2x8GB) + RTX 3070 8Gb + 500GB NVME", "precio": 925000, "img": "../photos/1g.jpg"},
+    {"id": 2,  "nombre": "PC GAMER XTREME 2", "cantidad": 1, "desc": "PC Gamer Xtreme2 | Intel Core I7 10700F + 16GB (2x8GB) + RX 6800 XT 16Gb + 500GB NVME", "precio": 814999, "img": "../photos/1g.jpg"},
+    {"id": 3,  "nombre": "PC GAMER ELITE", "cantidad": 1, "desc": "PC Gamer Elite | Intel Core I7 10700F + 8GB + RTX 2060 SUPER 8GB", "precio": 680000, "img": "../photos/2g.png"},
+    {"id": 4,  "nombre": "PC GAMER ELITE2", "cantidad": 1, "desc": "PC Gamer Elite2 | Intel Core I5 10400F + 8GB + RX 6700 10Gb", "precio": 525000, "img": "../photos/2g.png"},
+    {"id": 5,  "nombre": "PC GAMER ELITE3", "cantidad": 1, "desc": "PC Gamer Elite3 | Intel Core I5 10400F + 8GB + GTX 1660 6Gb", "precio": 418000, "img": "../photos/2g.png"},
+    {"id": 6,  "nombre": "PC GAMER BASIC", "cantidad": 1, "desc": "PC Gamer Basic | AMD Ryzen 7 5700G + 16GB (2x8GB) 3200Mhz + Radeon VEGA", "precio": 344999,  "img": "../photos/3g.png"},
+    {"id": 7,  "nombre": "PC GAMER BASIC2", "cantidad": 1, "desc": "PC Gamer Basic2| AMD Ryzen 5 4650G + 8GB (2x4GB) + Radeon VEGA", "precio": 241999,  "img": "../photos/3g.png"},
+    {"id": 8,  "nombre": "PC HOGAR U OFICINA", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Core I5 10400 + 8GB + SSD", "precio": 229999,  "img": "../photos/4g.jpg"},
+    {"id": 9,  "nombre": "PC HOGAR U OFICINA 2", "cantidad": 1, "desc": "PC Hogar/Oficina | Intel Celeron G5905 + 4GB + SSD", "precio": 119999,  "img": "../photos/4g.jpg"}
 ]
