@@ -21,7 +21,9 @@ Se utilizó en esta web:
                
 * <strong>GitHub:</strong> Repositorio subido a GitHub con sus branch, commits y gitignore. GitHub pages implementado :star:
 
-* <strong>Framework:</strong> Se utilizó la libreria Bootstrap5 para las 2 secciones de "Politic" y "Term"
+* <strong>Framework:</strong> Se utilizó la libreria Bootstrap5 para las 3 secciones de "Politic","Term" y "Productos".
+
+* <strong>JavaScript:</strong> Se implementó Javascript en el HTML "Productos" con un carrito de ventas. Uso de objetos y Arrays, funciones y condicionales, DOM, librerías, fetch, JSON y API externa.
 
 <strong> URL de la página subida al servidor :point_right: [LINK](https://tech-912.netlify.app/) :point_left: </strong>
 
