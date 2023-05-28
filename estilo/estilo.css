@@ -777,6 +777,8 @@ input {
   border-radius: 15px;
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
   background-color: #003459; }
+  .paquete img {
+    justify-content: center; }
 
 .paquete:hover {
   border: 2px solid rgba(0, 0, 0, 0.384);
@@ -892,6 +894,9 @@ input {
 
 #fotocarrito {
   color: white; }
+
+.imagen {
+  text-align: center; }
 
 @keyframes gradient {
   0% {

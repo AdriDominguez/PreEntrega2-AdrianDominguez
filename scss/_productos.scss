@@ -244,6 +244,9 @@
     border-radius: 15px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
     background-color: $color-dos;
+    img {
+      justify-content: center;
+    }
   }
   
   .paquete:hover {
@@ -281,7 +284,6 @@
   
   .boton-agregar:focus {
     outline: none;
-  
   }
   
   .boton-comprar:hover {
@@ -381,4 +383,8 @@
 
   #fotocarrito {
     color: white;
+  }
+
+  .imagen {
+    text-align: center;
   }
