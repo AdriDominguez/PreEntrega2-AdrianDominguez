@@ -59,7 +59,7 @@ const cargapaquetes = async () => {
     const div = document.createElement('div')
     div.classList.add('paquete')
     div.innerHTML = `
-    <img class="cardimg" src=${paquete.img} alt= "">
+    <center> <img class="cardimg" src=${paquete.img} alt= ""> </center>
     
     <p>${paquete.desc}</p>
     <p class="precioPaquete">Precio:$ ${paquete.precio}</p>
