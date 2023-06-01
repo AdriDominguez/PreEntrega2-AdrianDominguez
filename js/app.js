@@ -187,3 +187,24 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarCarrito()
     }
 })
+// Después de cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtén una referencia al elemento del contenedor de la barra deslizadora
+    const sliderContainer = document.getElementById('slider');
+  
+    // Inicializa la barra deslizadora utilizando noUiSlider
+    noUiSlider.create(sliderContainer, {
+      start: [0], // Valor inicial del slider
+      range: {
+        min: 0, // Valor mínimo
+        max: 100 // Valor máximo
+      }
+    });
+  
+    // Maneja los eventos de cambio en la barra deslizadora
+    sliderContainer.noUiSlider.on('update', (values, handle) => {
+      const value = values[handle];
+      // Haz algo con el valor seleccionado
+      console.log(value);
+    });
+  });
