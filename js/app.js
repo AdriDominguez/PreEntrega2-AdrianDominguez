@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarCarrito()
     }
 })
-// Después de cargar la página
+
 document.addEventListener('DOMContentLoaded', () => {
     // Obtén una referencia al elemento del contenedor de la barra deslizadora
     const sliderContainer = document.getElementById('slider');
