@@ -826,7 +826,8 @@ input {
   align-items: center;
   transition: all .5s;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow-y: scroll; }
   .modal-contenedor p {
     color: black; }
 

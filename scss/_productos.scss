@@ -303,6 +303,7 @@
     transition: all .5s;
     opacity: 0;
     visibility: hidden;
+    overflow-y: scroll;
   
     p {
       color: black;

@@ -63,7 +63,7 @@ const cargapaquetes = async () => {
     
     <p>${paquete.desc}</p>
     <p class="precioPaquete">Precio:$ ${paquete.precio}</p>
-    <button id="agregar${paquete.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    <center> <button id="agregar${paquete.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button> </center>
     `
     contenedorPaquetes.appendChild(div)
 
@@ -188,23 +188,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Obtén una referencia al elemento del contenedor de la barra deslizadora
-    const sliderContainer = document.getElementById('slider');
-  
-    // Inicializa la barra deslizadora utilizando noUiSlider
-    noUiSlider.create(sliderContainer, {
-      start: [0], // Valor inicial del slider
-      range: {
-        min: 0, // Valor mínimo
-        max: 100 // Valor máximo
-      }
-    });
-  
-    // Maneja los eventos de cambio en la barra deslizadora
-    sliderContainer.noUiSlider.on('update', (values, handle) => {
-      const value = values[handle];
-      // Haz algo con el valor seleccionado
-      console.log(value);
-    });
-  });
